@@ -23,7 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/textviewbg"
-        android:textAllCaps="true"
+        android:textAllCaps="false"
         android:fontFamily="@font/monolisaregular"
         android:textColor="@color/white"
         android:textSize="15dp"/>
@@ -35,7 +35,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/textviewbg"
-        android:textAllCaps="true"
+        android:textAllCaps="false"
         android:fontFamily="@font/monolisaregular"
         android:textColor="@color/white"
         android:textSize="15dp"/>
