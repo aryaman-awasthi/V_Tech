@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:background="@color/d_grey">
+    <TextView
+        android:id="@+id/d_tv"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textviewbg"
+        android:textAllCaps="true"
+        android:fontFamily="@font/monolisabold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/d_occ"
+        android:layout_below="@+id/d_tv"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textviewbg"
+        android:textAllCaps="true"
+        android:fontFamily="@font/monolisaregular"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+    <TextView
+        android:id="@+id/ans"
+        android:layout_below="@+id/d_occ"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textviewbg"
+        android:textAllCaps="true"
+        android:fontFamily="@font/monolisaregular"
+        android:textColor="@color/white"
+        android:textSize="15dp"/>
+
+
+</RelativeLayout>

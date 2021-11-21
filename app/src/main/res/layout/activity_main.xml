@@ -52,7 +52,7 @@
                 android:hint="Enter text here!"
                 android:padding="10dp"
                 android:textColor="@color/d_grey"
-                android:textColorHint="@color/d_grey"
+                android:textColorHint="@color/l_grey"
                 android:fontFamily="@font/monolisaregular"/>
             <Button
                 android:id="@+id/vowels"
@@ -70,7 +70,8 @@
                 android:textColor="@color/white"
                 android:fontFamily="@font/monolisaregular"
                 android:textAlignment="viewStart"
-                android:drawableEnd="@drawable/ic_baseline_east_24"/>
+                android:drawableEnd="@drawable/ic_baseline_east_24"
+                android:onClick="vowels"/>
 
             <Button
                 android:id="@+id/consonants"
@@ -88,7 +89,8 @@
                 android:textColor="@color/white"
                 android:fontFamily="@font/monolisaregular"
                 android:textAlignment="viewStart"
-                android:drawableEnd="@drawable/ic_baseline_east_24"/>
+                android:drawableEnd="@drawable/ic_baseline_east_24"
+                android:onClick="consonants"/>
 
             <Button
                 android:id="@+id/capital_letters"
@@ -106,7 +108,8 @@
                 android:textColor="@color/white"
                 android:fontFamily="@font/monolisaregular"
                 android:textAlignment="viewStart"
-                android:drawableEnd="@drawable/ic_baseline_east_24"/>
+                android:drawableEnd="@drawable/ic_baseline_east_24"
+                android:onClick="capital_letters"/>
 
             <Button
                 android:id="@+id/small_letters"
@@ -124,7 +127,8 @@
                 android:textColor="@color/white"
                 android:fontFamily="@font/monolisaregular"
                 android:textAlignment="viewStart"
-                android:drawableEnd="@drawable/ic_baseline_east_24"/>
+                android:drawableEnd="@drawable/ic_baseline_east_24"
+                android:onClick="small_letters"/>
 
             <Button
                 android:id="@+id/digits"
@@ -142,7 +146,8 @@
                 android:textColor="@color/white"
                 android:fontFamily="@font/monolisaregular"
                 android:textAlignment="viewStart"
-                android:drawableEnd="@drawable/ic_baseline_east_24"/>
+                android:drawableEnd="@drawable/ic_baseline_east_24"
+                android:onClick="digits"/>
 
 
 
