@@ -2,6 +2,9 @@ package com.example.v_tech_q1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,17 +14,19 @@ import android.widget.TextView;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
 
 @SuppressWarnings("ALL")
 public class MainActivity extends AppCompatActivity {
 
     EditText editText;
+    Dialog dialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-
+        dialog = new Dialog(this);
+        dialog.getWindow().getAttributes().windowAnimations = R.style.animation;
     }
 
     public void vowels(View view) {
@@ -96,9 +101,11 @@ public class MainActivity extends AppCompatActivity {
         if (text.isEmpty())
         {
             editText.setHint("Empty Field!");
+
             editText.setHintTextColor(getResources().getColor(R.color.l_red));
         }
         else {
+            editText.setHintTextColor(getResources().getColor(R.color.l_red));
             char[] arr = text.toCharArray();
             Arrays.sort(arr);
             int ucc_count = 0;
@@ -197,13 +204,38 @@ public class MainActivity extends AppCompatActivity {
             openDialog(d_count, hashMap, "Digits");
         }
     }
-    public void openDialog(int occ, HashMap hashMap, String type)
-    {
-        PopUp popUp = new PopUp(occ, type, hashMap);
-        popUp.show(getSupportFragmentManager(), "open dialog");
-    }
-    public boolean vowelCheck(char character)
+    boolean vowelCheck(char character)
     {
         return character == 'A' || character == 'E' || character == 'I' || character == 'O' || character == 'U';
+    }
+
+    private void openDialog(int occ, HashMap<Character,Integer> hashMap, String type)
+    {
+        dialog.setContentView(R.layout.popup);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        TextView title = dialog.findViewById(R.id.d_tv);
+        TextView Occ = dialog.findViewById(R.id.d_occ);
+        TextView ans = dialog.findViewById(R.id.ans);
+        Button button = dialog.findViewById(R.id.btn);
+        title.setText(type);
+        Occ.setText(new StringBuilder().append(type).append(" in your input: ").append(occ).toString());
+        String final_ans =  "Character\t->\tOccurrence(s)\n";
+        for (Map.Entry<Character,Integer> entry : hashMap.entrySet())
+        {
+            char key = entry.getKey();
+            int obj = entry.getValue();
+            if(obj != 0)
+            {
+                final_ans = final_ans + key + "\t->\t" + obj+"\n";
+            }
+        }
+        ans.setText(final_ans);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
     }
 }
