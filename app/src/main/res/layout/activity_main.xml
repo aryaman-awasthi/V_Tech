@@ -14,7 +14,7 @@
         android:id="@+id/ll1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/d_grey_bg"
+        android:background="@color/d_grey"
         android:padding="5dp"
         android:gravity="center"
         android:orientation="horizontal">
@@ -38,8 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/ll1"
-        android:padding="10dp"
-        >
+        android:padding = "10dp">
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
