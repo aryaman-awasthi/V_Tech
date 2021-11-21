@@ -3,7 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Work/Apps/V_tech_q1/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Work/Apps/V_tech_q1/app/src/main/res/drawable-v24/afternoon.xml" value="0.37864583333333335" />
+        <entry key="..\:/Work/Apps/V_tech_q1/app/src/main/res/drawable-v24/evening.xml" value="0.37864583333333335" />
+        <entry key="..\:/Work/Apps/V_tech_q1/app/src/main/res/drawable-v24/morning.xml" value="0.37864583333333335" />
+        <entry key="..\:/Work/Apps/V_tech_q1/app/src/main/res/drawable-v24/night.xml" value="0.37864583333333335" />
+        <entry key="..\:/Work/Apps/V_tech_q1/app/src/main/res/drawable-xxxhdpi/l_grey_bg.xml" value="0.16203703703703703" />
+        <entry key="..\:/Work/Apps/V_tech_q1/app/src/main/res/drawable/d_grey_bg.xml" value="0.1" />
+        <entry key="..\:/Work/Apps/V_tech_q1/app/src/main/res/drawable/edittextbg.xml" value="0.13796296296296295" />
+        <entry key="..\:/Work/Apps/V_tech_q1/app/src/main/res/drawable/ic_baseline_east_24.xml" value="0.14444444444444443" />
+        <entry key="..\:/Work/Apps/V_tech_q1/app/src/main/res/layout/activity_main.xml" value="0.33" />
       </map>
     </option>
   </component>
